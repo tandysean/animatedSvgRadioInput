@@ -1,2 +1,3 @@
-# animatedSvgRadioInput
-using css3 animation and svg to create an animated custom radio button
+# Animated SVG Radio Button
+Uses css3 SVG animation and semantic markup. 
+

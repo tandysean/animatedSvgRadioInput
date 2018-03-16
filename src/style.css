@@ -1,0 +1,52 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.custom-radio input[type="radio"]:checked + label > svg .inner-circle {
+  animation-duration: .4s;
+  animation-name: checkedTransition;
+  transform-origin: center center;
+  animation-fill-mode: forwards;
+}
+
+.custom-radio input[type="radio"]:checked + label > svg .outer-circle {
+  stroke: #0065BD;
+}
+
+
+.custom-radio > div {
+  display: inline-block;
+}
+
+.custom-radio label {
+  display: block;
+  cursor: pointer;
+}
+
+.custom-radio label span {
+  display: none;
+}
+
+@keyframes checkedTransition {
+    from {
+        transform: scale(1);
+
+    }
+    to {
+        transform: scale(0.4);
+
+    }
+}
